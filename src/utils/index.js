@@ -13,7 +13,7 @@ export function classes(...args) {
 				return arg;
 			} else if (typeof arg === "object") {
 				return Object.entries(arg)
-					.filter(([_, value]) => value)
+					.filter(([_, value]) => value === "" || value)
 					.map(([key, value]) =>
 						value.length ? [key, "-" + value] : [key, value]
 					)
