@@ -21,23 +21,6 @@
 				type: "text",
 			},
 		},
-		rounded: {
-			defaultValue: "",
-			description: "Utilities for controlling the border radius of an element.",
-			control: { type: "select" },
-			options: ["xs", "sm", "", "md", "lg", "xl", "2xl"],
-		},
-		shadow: {
-			defaultValue: "",
-			description: "Utilities for controlling the box shadow of an element.",
-			control: { type: "select" },
-			options: ["xs", "sm", "", "md", "lg", "xl", "2xl"],
-		},
-		bg: {
-			defaultValue: "",
-			description: "class attribute",
-			control: { type: "text" },
-		},
 		slot: { control: "text", defaultValue: "", description: "class attribute" },
 		click: {
 			action: "click",
