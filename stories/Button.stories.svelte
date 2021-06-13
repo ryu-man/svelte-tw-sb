@@ -12,7 +12,7 @@
 			name: "class",
 			type: { name: "string", required: false },
 			defaultValue: "",
-			description: "Provide custome class selectors",
+			description: "Provide custom class selectors",
 			table: {
 				type: { summary: "string" },
 				defaultValue: { summary: "" },

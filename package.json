@@ -1,17 +1,19 @@
 {
 	"name": "svelte-tw-sb",
-	"version": "1.0.0",
-	"description": "",
+	"version": "0.1.0",
 	"svelte": "src/index.js",
 	"module": "dist/index.mjs",
 	"main": "dist/index.js",
-	"scripts": {
-		"build": "rollup -c",
-		"prepublishOnly": "npm run build",
-		"test": "jest test",
-		"test:watch": "yarn test -- --watch",
-		"storybook": "start-storybook -p 6006",
-		"build-storybook": "build-storybook -o ./docs"
+	"description": "Svelte Tailwind basic library",
+	"homepage": "https://github.com/ryu-man/svantic#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/***/***.git"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/***/***/issues"
 	},
 	"keywords": [
 		"svelte"
@@ -20,8 +22,15 @@
 		"src",
 		"dist"
 	],
-	"author": "",
-	"license": "MIT",
+	"scripts": {
+		"build": "rollup -c",
+		"prepublishOnly": "npm run build",
+		"publish": "npm publish",
+		"test": "jest test",
+		"test:watch": "yarn test -- --watch",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook -o ./docs"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.14.5",
 		"@babel/preset-env": "^7.14.2",
