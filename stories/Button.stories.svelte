@@ -37,10 +37,7 @@
 <Story
 	name="Tailwind Button"
 	args={{
-		class: "p-4",
-		rounded: "",
-		shadow: "",
-		bg: "blue-500",
+		class: "twBtn",
 		slot: "Hello, Storybook!",
 	}}
 />
