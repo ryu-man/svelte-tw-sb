@@ -1,6 +1,4 @@
 <script>
-	import { classes } from "./utils";
-
 	/**
 	 * A Button Component
 	 * @component
@@ -16,6 +14,6 @@
 
 </script>
 
-<button class={[_class, "p-4 bg-blue-500 text-white"].join(" ")} on:click>
+<button class="p-4 bg-blue-500 text-white rounded" on:click>
 	<slot />
 </button>

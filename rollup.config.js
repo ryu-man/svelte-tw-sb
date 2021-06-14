@@ -27,10 +27,15 @@ export default {
 			compilerOptions: {
 				dev: !production,
 			},
-			emitCss: false,
-			preprocess: sveltePreprocess({}),
+			preprocess: sveltePreprocess({
+				defaults: {
+					style: "postcss",
+				},
+				postcss: true,
+			}),
 		}),
-		,
+		css({ output: "index.css" }),
+
 		resolve({
 			dedupe: ["svelte"],
 		}),

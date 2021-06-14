@@ -1,7 +1,7 @@
 <script>
 	import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
 	import { Button } from "../src";
-
+	import Root from './Root.svelte'
 </script>
 
 <Meta
@@ -31,7 +31,9 @@
 />
 
 <Template let:args>
-	<Button {...args} on:click={args.onClick}>{args.slot}</Button>
+	<Root>
+		<Button {...args} on:click={args.onClick}>{args.slot}</Button>
+	</Root>
 </Template>
 
 <Story
