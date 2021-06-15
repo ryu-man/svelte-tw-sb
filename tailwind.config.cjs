@@ -4,7 +4,7 @@ const { name } = require("./package.json");
 module.exports = {
 	mode: "jit",
 	purge: {
-		content: ["./**/*.svelte", `node_modules/${name}/src/**/*.svelte`],
+		content: ["src/**/*.svelte", `node_modules/${name}/src/**/*.svelte`],
 		enable: true,
 		options: {
 			defaultExtractor: (content) => [
