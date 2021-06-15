@@ -1,8 +1,11 @@
+<script>
+</script>
+
 <slot />
 
 <style global lang="postcss">
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
+	@import "tailwindcss/base";
+	@import "tailwindcss/components";
+	@import "tailwindcss/utilities";
 
 </style>
