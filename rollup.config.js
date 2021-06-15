@@ -4,8 +4,9 @@ import commonjs from "@rollup/plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
 import sveltePreprocess from "svelte-preprocess";
 import css from "rollup-plugin-css-only";
-
 import pkg from "./package.json";
+
+const postCSSPlugins = require("./rollup.plugin");
 
 const name = pkg.name
 	.replace(/^(@\S+\/)?(svelte-)?(\S+)/, "$3")
@@ -31,7 +32,9 @@ export default {
 				defaults: {
 					style: "postcss",
 				},
-				postcss: true,
+				postcss: {
+					plugins: postCSSPlugins()
+				},
 			}),
 		}),
 		css({ output: "index.css" }),

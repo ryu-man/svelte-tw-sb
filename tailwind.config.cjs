@@ -1,11 +1,12 @@
 const { tailwindExtractor } = require("tailwindcss/lib/lib/purgeUnusedStyles");
 const { name } = require("./package.json");
+const production = !process.env.ROLLUP_WATCH;
 
 module.exports = {
-	mode: "jit",
+	// mode: "jit",
 	purge: {
+		enabled: production,
 		content: ["src/**/*.svelte", `node_modules/${name}/src/**/*.svelte`],
-		enable: true,
 		options: {
 			defaultExtractor: (content) => [
 				// If this stops working, please open an issue at https://github.com/svelte-add/tailwindcss/issues rather than bothering Tailwind Labs about it

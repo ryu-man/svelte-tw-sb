@@ -5,7 +5,6 @@ module.exports = (config = {}) => {
 	const currentTailwindConfig = require("./tailwind.config.cjs");
 
 	return [
-		require("postcss-import")(),
 		require("tailwindcss")({ ...currentTailwindConfig, ...tailwind }),
 		require("autoprefixer")(),
 
